@@ -7,7 +7,11 @@ describe('Tests for Capitalize function', () => {
         expect(capitalize).to.be.a('function')
     })
 
-    it('capitalize should return a string', ()=>{
-        expect(capitalize('hello')).to.be.a('string')
+    it('capitalize should return a string if no arg is passed', ()=>{
+        expect(capitalize()).to.be.a('string')
+    })
+
+    it('capitalize should return a string if arg is an empty string', ()=>{
+        expect(capitalize('')).to.be.equal('')
     })
 })
