@@ -1,5 +1,5 @@
 function capitalize() {
 
 }
-
-export default capitalize
+ 
+module.exports= capitalize
