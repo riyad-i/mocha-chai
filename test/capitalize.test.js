@@ -18,4 +18,8 @@ describe('Tests for Capitalize function', () => {
     it('capitalize should turn hello into Hello', ()=>{
         expect(capitalize('hello')).to.be.equal('Hello')
     })
+
+    it('should throw a TypeError if arg is not a string', ()=>{
+        expect(() => capitalize(123)).to.throw(TypeError)
+    })
 })
