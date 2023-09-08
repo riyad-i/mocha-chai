@@ -1,8 +1,13 @@
-function capitalize(str = 'No argument passed in') {
+function capitalize(str) {
+    // return str
+    if(str == undefined){
+        return('No argument passed in')
+    }
+    if(str.length == 0){
+        return str
+    }
+    str = str.charAt(0).toUpperCase() + str.slice(1)
     return str
-    let firstLet = str[0]
-    firstLet = firstLet.toUpperCase()
-    return (firstLet + str.slice(1))
 }
  
 console.log(capitalize());

@@ -14,4 +14,8 @@ describe('Tests for Capitalize function', () => {
     it('capitalize should return a string if arg is an empty string', ()=>{
         expect(capitalize('')).to.be.equal('')
     })
+
+    it('capitalize should turn hello into Hello', ()=>{
+        expect(capitalize('hello')).to.be.equal('Hello')
+    })
 })
